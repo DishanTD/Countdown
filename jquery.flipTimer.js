@@ -6,12 +6,14 @@
    *
    * @param element {HTMLElement} the element flipTimer is called on
    */
+  console.log('test');
   var flipTimer = function(element, options) {
     this.element = element;
 
     // ensures the HTMLElement has a class of 'flipTimer'
     if (!this.element.hasClass('flipTimer')) {
       this.element.addClass('flipTimer');
+      console.log('flip');
     }
 
     // attach users options to instance
@@ -26,7 +28,6 @@
     // detects if the seconds digits should be used
     if (this.element.find('.seconds').length > 0) {
       this.options.seconds = this.element.find('.seconds')[0];
-      console.log('sec');
     }
 
     // detects if the minutes digits should be used
