@@ -6,14 +6,13 @@
    *
    * @param element {HTMLElement} the element flipTimer is called on
    */
-  console.log('test');
+  
   var flipTimer = function(element, options) {
-    this.element = element;
+    this.element = $('.flipTimer');
 
     // ensures the HTMLElement has a class of 'flipTimer'
     if (!this.element.hasClass('flipTimer')) {
       this.element.addClass('flipTimer');
-      console.log('flip');
     }
 
     // attach users options to instance
