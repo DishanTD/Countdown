@@ -26,6 +26,7 @@
     // detects if the seconds digits should be used
     if (this.element.find('.seconds').length > 0) {
       this.options.seconds = this.element.find('.seconds')[0];
+      console.log('sec');
     }
 
     // detects if the minutes digits should be used
