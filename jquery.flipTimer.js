@@ -8,11 +8,14 @@
    */
   
   var flipTimer = function(element, options) {
-    this.element = $('.flipTimer');
+    this.element = element;
 
     // ensures the HTMLElement has a class of 'flipTimer'
     if (!this.element.hasClass('flipTimer')) {
       this.element.addClass('flipTimer');
+      
+    } else {
+      console.log('flip has');
     }
 
     // attach users options to instance
